@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking App</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Loging portion -->
+    <header>
+        <div class="logo">
+            <h1>logo</h1>
+        </div>
+        <div>
+            <h6>log in to get started</h6>
+        </div>
+        <div class="login-part">
+            <input placeholder="User" type="text" class="username-input">
+            <input type="password" placeholder="Pass" class="password-input">
+            <button type="button" class="login-button">Login</button>
+        </div>
+    </header>
+    <!-- Movements-->
+    <!-- BALANCE -->
+    <div class="main-body">
+        <div class="balance">
+            <div>
+                <p class="balance-label">Current balance</p>
+                <p class="balance-date">As of <span class="date">05/03/2037</span></p>
+            </div>
+            <p class="balance-value">0000Rs.</p>
+        </div>
+        <div style="width: 100%;display: flex;flex-direction: row;column-gap: 20px;">
+            <div class="movements-main-div">
+                <div class="summary-balance">
+                    <span>IN:</span>
+                    <span class="value-in"></span>
+                    <span>OUT:</span>
+                    <span class="value-out"></span>
+                    <span>INTEREST:</span>
+                    <span class="value-intrest"></span>
+                </div>
+                <div class="movements">
+                    <div class="mevements-row">
+                        <div class="movements-type movements-type-deposit">2 deposit</div>
+                        <div class="movements-date">3 days ago</div>
+                        <div class="movements-value"> Rs.236</div>
+                    </div>
+                    <div class="mevements-row">
+                        <div class="movements-type movements-type-withdraw">2 deposit</div>
+                        <div class="movements-date">3 days ago</div>
+                        <div class="movements-value">Rs.236</div>
+                    </div>
+                </div>
+            </div>
+            <div class="transfer-money-main-div">
+                <div class="sort">
+                    <button>sort</button>
+                </div>
+                <div class="transfer-money">
+                    <p>transfer money</p>
+                    <div>
+                        <input placeholder="Transfer no" class="transfer-user">
+                        <input placeholder="Amount" class="transfer-amount">
+                        <button class="transfer-button"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+                    </div>
+                </div>
+                <div class="transfer-money">
+                    <p>request loan</p>
+                    <div>
+                        <input placeholder="Amount" class="transfer-amount">
+                        <button class="transfer-button"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+                    </div>
+                </div>
+                <div class="transfer-money">
+                    <p>close account</p>
+                    <div>
+                        <input placeholder="Confirm USE" class="transfer-user">
+                        <input placeholder="Confirm PIN" class="transfer-amount">
+                        <button class="transfer-button"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=heading%></title>
+</head>
+<body>
+    <h1>Hi this is product page</h1>
+    <% for(let i=0;i<size;i++){ %>
+        <div>
+            <h2><%=data[i].productName%></h2>
+            <p><%=data[i].productDesc%></p>
+        </div>
+        <%}%>
+</body>
+</html>
